@@ -1,0 +1,84 @@
+body{
+    background: #fff;
+}
+.wrap{
+   margin: 40px;
+}
+
+
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(4,minmax(0,1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr)); /* kream 본 사이트는 repeat 4로 주었지만 반응형 웹을 만들기 위해 auto-fill을 사용하여 바꾸어주었다*/
+    grid-column-gap: 8px;
+    column-gap : 8px;
+    row-gap: 28px;
+    
+}
+
+.title{
+    padding-left: 20px;
+}
+.title h1{
+    font-size: 18px;
+    letter-spacing: -.09px;
+}
+
+.title p{
+
+    color: rgba(34,34,34,.5);
+   
+    
+
+}
+
+.main{
+    width:210px;
+    padding-left: 20px;
+}
+
+.main-img{
+    border-radius: 5px;
+    width:210px;
+    aspect-ratio: 1 / 1;
+    object-fit:cover;
+}
+
+
+em{
+    font-size: 15px;
+    font-weight: 700;
+
+}
+a{
+    font-weight: 700;
+}
+
+.price-tag{
+    font-size: 11px;
+    color: rgba(34,34,34,.5);
+}
+
+p.item-example{
+    line-height: 17px;
+    margin-top: 8.5px;
+    max-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 14px;
+    color: #222;
+}
+p,
+a{
+    font-size: 14px;
+}
+
+
+a{
+    display: block;
+    color: black;
+}
